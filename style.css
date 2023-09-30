@@ -6,8 +6,8 @@
 
 :root {
   --ff-all: "Outfit", sans-serif;
-  --bg-primary: #1f2424;
-  --color-primary: #ed4101;
+  --bg-primary: #160D1B;
+  --color-primary: #7f03bb;
   --color-terciary: #e7eff6;
 
   font-size: 62.5%;
@@ -46,7 +46,7 @@ header {
 }
 
 #logo {
-  height: 4rem;
+  height: 7rem;
 }
 
 .nav-list {
@@ -65,15 +65,15 @@ ul li a {
 
 #contato {
   color: #e7eff6;
-  background: linear-gradient(to right, #ed4101, #fd8210);
-  box-shadow: 0 0.5rem 1.125rem -0.3rem rgba(251, 46, 0, 0.9);
-  padding: 1rem 5rem;
+ background: linear-gradient(150deg, #16026b, #7f03bb, #ED4101);
+  box-shadow: 0 0.5rem 1.125rem -0.7rem #b933d4;
+  padding: 1.5rem 5rem;
 
   border-radius: 4rem;
 }
 
 #contato:hover {
-  background-color: #b5400e;
+  background-color: #7f03bb;
   color: var(--color-terciary);
 }
 
@@ -122,8 +122,8 @@ ul li a {
   color: var(--color-terciary);
 
   color: #e7eff6;
-  background: linear-gradient(to right, #ed4101, #fd8210);
-  box-shadow: 0 0.5rem 1.125rem -0.3rem #fd5310;
+  background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem #7f03bb;
   border-radius: 4rem;
 
   width: 18rem;
@@ -143,27 +143,27 @@ ul li a {
 }
 
 .card-container {
-  height: 80%;
+  height: 95%;
   width: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border: 1px solid #fd5310;
   border-radius: 0 2rem 2rem 0;
 
   color: #e7eff6;
-  background: linear-gradient(to right, #ed4101, #fd8210);
+  background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem #7f03bb;
 
   position: absolute;
-  top: -30%;
+  top: -40%;
   left: 0;
 }
 
 .card {
   width: 20rem;
   height: 20rem;
-  margin-left: 10rem;
+  margin-left: 8%;
 
   text-align: center;
   font-family: var(--ff-all);
@@ -171,4 +171,13 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#img-1{
+  width: 100rem;
+  position: absolute;
+
+  left: 10%;
+  top:5%;
+  z-index: 2;
 }
