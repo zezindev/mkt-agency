@@ -6,7 +6,7 @@
 
 :root {
   --ff-all: "Outfit", sans-serif;
-  --bg-primary: #160d1b;
+  --bg-primary: #201227;
   --color-primary: #7f03bb;
   --color-terciary: #e7eff6;
 
@@ -28,6 +28,7 @@
 
 body {
   font-family: var(--ff-all);
+  background-color: var(--bg-primary);
 }
 
 header {
@@ -102,8 +103,6 @@ ul li a {
 }
 
 .main-section {
-  height: 100vh;
-  width: 100%;
   background-image: url(./imgs/main-img.png);
   background-attachment: fixed;
   background-size: cover;
@@ -113,9 +112,8 @@ ul li a {
 
 .container {
   width: clamp(33rem, 80%, 130rem);
-  height: 80rem;
+  height: 100rem;
 
-  padding-top: 20rem;
   margin: auto;
 
   display: flex;
@@ -154,22 +152,16 @@ ul li a {
 }
 
 .section-container {
-  background-color: var(--bg-primary);
-}
-
-.section-container-one {
   position: relative;
-  height: 50rem;
 
-  background-color: var(--bg-primary);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .card-container {
-  height: 80%;
-  width: 92%;
+  height: 35rem;
+  width: 97%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,6 +175,8 @@ ul li a {
   position: absolute;
   top: -15rem;
   left: 0;
+
+  padding: 0 5rem;
 }
 
 .card {
@@ -192,7 +186,7 @@ ul li a {
 
   text-align: center;
   font-family: var(--ff-all);
-  font-size: 2rem;
+  font-size: var(--fs-body);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,43 +194,44 @@ ul li a {
 
 .video-container {
   position: absolute;
-  top: 18rem;
-  margin-left: 3%;
-
-  z-index: 30;
+  top: 12rem;
+  margin: auto;
 }
 
 iframe {
   border-radius: 2rem;
 }
 
-#img-1 {
-  width: 100rem;
-  position: absolute;
+#master-one {
+  padding-top: 60rem;
+}
 
-  left: 10%;
-  top: 5%;
-  z-index: 2;
+#master-two {
+  padding-top: 10rem;
+}
+
+#div-content-one {
+  align-items: flex-start;
+}
+
+#div-content-two {
+  align-items: flex-start;
 }
 
 .div-master {
-  width: clamp(33rem, 80%, 130rem);
+  width: clamp(33rem, 80%, 110rem);
+  display: flex;
   align-items: center;
   justify-content: space-around;
-  display: flex;
-
-  height: 50%;
-  border: #ed4101 1px solid;
 }
 
 .div-content {
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 
-  height: 50%;
+  height: 35rem;
   width: 50%;
 
   color: var(--color-terciary);
@@ -253,10 +248,14 @@ iframe {
 .div-img {
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  height: 35rem;
+  width: 50%;
 }
 
 .div-img img {
-  width: 70%;
+  height: 90%;
 }
 
 /* Mobile */
@@ -284,27 +283,21 @@ iframe {
     margin: auto;
   }
 
-  .section-container-one {
-    position: relative;
-    height: 18rem;
-  }
-
   .card-container {
-    height: 20rem;
-    width: 95%;
+    height: 30rem;
+    width: 97%;
+    display: flex;
 
-    top: -15%;
-    left: 0;
+    padding: 0 2rem;
   }
 
   .card {
-    width: 10rem;
     height: 100%;
-    margin-left: 3%;
+    margin: 2rem;
 
     text-align: start;
     font-family: var(--ff-all);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 
     display: flex;
     justify-content: center;
@@ -313,8 +306,6 @@ iframe {
 
   .video-container {
     position: absolute;
-    top: 90%;
-    margin-left: 0;
   }
 
   iframe {
@@ -325,20 +316,29 @@ iframe {
 
   .div-master {
     width: clamp(33rem, 80%, 130rem);
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-around;
     display: flex;
 
-    height: 80%;
-    border: #ed4101 1px solid;
+    padding-top: 20rem;
   }
 
   .div-content p {
     font-size: var(--fs-body);
   }
+
+  .div-img img {
+    height: 80%;
+  }
 }
 
 @media (max-width: 600px) {
+  .card {
+    height: 100%;
+    margin-left: 5%;
+    font-size: 1.1rem;
+  }
+
   iframe {
     width: 30rem;
     height: 20rem;
@@ -346,21 +346,25 @@ iframe {
   }
 
   .div-master {
-    width: clamp(33rem, 80%, 130rem);
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     display: flex;
     flex-direction: column;
 
-    height: 100%;
     width: 100%;
-    border: #ed4101 1px solid;
-
-    margin-top: 50%;
   }
+
   .div-content {
+    justify-content: center;
     width: 100%;
     margin: auto;
-    padding: 0 5%;
+  }
+
+  .div-img {
+    height: 50%;
+  }
+
+  .div-img img {
+    height: 90%;
   }
 }
