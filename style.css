@@ -589,6 +589,7 @@ h3 {
 @media (max-width: 600px) {
   .main-section {
     background-image: url(./imgs/main-img\ -\ Copia.png);
+     background-size: cover;
   }
 
   .card {
