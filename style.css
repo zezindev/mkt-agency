@@ -490,7 +490,7 @@ h3 {
   .main-section {
     background-image: url(./imgs/main-img-mobile.png);
 
-    background-size: auto;
+    background-size: contain;
   }
 
   #logo {
