@@ -489,8 +489,6 @@ h3 {
 @media (max-width: 855px) {
   .main-section {
     background-image: url(./imgs/main-img-mobile.png);
-
-    background-size: contain;
   }
 
   #logo {
