@@ -488,6 +488,15 @@ h3 {
 }
 
 @media (max-width: 855px) {
+  .main-section {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./imgs/main-img\ -\ Copia.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
   #logo {
     top: 0;
     height: 4rem;
@@ -587,11 +596,6 @@ h3 {
 }
 
 @media (max-width: 600px) {
-  .main-section {
-    background-image: url(./imgs/main-img\ -\ Copia.png);
-     background-size: cover;
-  }
-
   .card {
     height: 100%;
     margin-left: 5%;
