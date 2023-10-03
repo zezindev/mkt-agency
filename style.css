@@ -488,11 +488,12 @@ h3 {
 
 @media (max-width: 855px) {
   .main-section {
-    background-image: url(./imgs/main-img.png);
+    background-image: url(./imgs/main-img-mobile.png);
     background-attachment: fixed;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    /* background-size: auto; */
   }
 
   #logo {
