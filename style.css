@@ -488,12 +488,12 @@ h3 {
 }
 
 @media (max-width: 855px) {
-  .main-section {
+  /* .main-section {
     background-image: url(./imgs/main-img.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-  }
+  } */
 
   #logo {
     top: 0;
