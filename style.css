@@ -336,7 +336,7 @@ iframe {
 
   border: 0.4rem solid transparent;
   background: linear-gradient(#222024, #222024) padding-box,
-    linear-gradient(150deg, #16026b, #7f03bb, #ed4101 ) border-box;
+    linear-gradient(150deg, #16026b, #7f03bb, #ed4101) border-box;
   border-radius: 3rem;
 
   transition: transform 0.3s ease-out;
@@ -487,6 +487,14 @@ h3 {
 }
 
 @media (max-width: 855px) {
+  .main-section {
+    background-image: url(./imgs/main-img.png);
+    background-attachment: fixed;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
   #logo {
     top: 0;
     height: 4rem;
@@ -580,7 +588,7 @@ h3 {
     width: 80%;
   }
 
-  .section-container-five h1{
+  .section-container-five h1 {
     padding: 0 4rem;
   }
 }
