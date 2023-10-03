@@ -489,10 +489,8 @@ h3 {
 
 @media (max-width: 855px) {
   .main-section {
-    height: 100vh;
-    width: 100%;
     background-image: url(./imgs/main-img.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
