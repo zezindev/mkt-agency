@@ -46,7 +46,7 @@ header {
 
   z-index: 999;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     rgba(22, 2, 107, 0.6),
     rgba(127, 3, 187, 0.5),
@@ -54,7 +54,7 @@ header {
   );
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
-  box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.37); */
 }
 
 #logo {
@@ -121,12 +121,13 @@ ul li a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  height: 110rem;
 }
 
 .container {
   width: clamp(33rem, 80%, 130rem);
-  height: 110rem;
 
+  height: 80rem;
   margin: auto;
 
   display: flex;
@@ -487,9 +488,9 @@ h3 {
 }
 
 @media (max-width: 855px) {
-  .main-section {
+  /* .main-section {
     background-image: url(./imgs/main-img-mobile.png);
-  }
+  } */
 
   #logo {
     top: 0;
