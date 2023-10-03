@@ -490,10 +490,10 @@ h3 {
   .main-section {
     background-image: url(./imgs/main-img-mobile.png);
     background-attachment: fixed;
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: no-repeat;
     background-position: center center;
-    /* background-size: auto; */
+    background-size: auto;
   }
 
   #logo {
