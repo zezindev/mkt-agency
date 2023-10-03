@@ -121,7 +121,7 @@ ul li a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 110rem;
+  height: 100vh;
 }
 
 .container {
@@ -589,7 +589,6 @@ h3 {
 @media (max-width: 600px) {
   .main-section {
     background-image: url(./imgs/main-img\ -\ Copia.png);
-    height: 100vh;
   }
 
   .card {
