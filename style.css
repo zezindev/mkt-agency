@@ -488,9 +488,9 @@ h3 {
 }
 
 @media (max-width: 855px) {
-  /* .main-section {
-    background-image: url(./imgs/main-img-mobile.png);
-  } */
+.main-section {
+  background-image: url(./imgs/main-img\ -\ Copia.png);
+}
 
   #logo {
     top: 0;
