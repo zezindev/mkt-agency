@@ -6,7 +6,7 @@
 
 :root {
   --ff-all: "Outfit", sans-serif;
-  --bg-primary: #1a0a27;
+  --bg-primary: #222024;
   --color-primary: #7f03bb;
   --color-terciary: #e7eff6;
 
@@ -29,8 +29,6 @@
 body {
   font-family: var(--ff-all);
   background-color: var(--bg-primary);
-  /* background: linear-gradient(to bottom, #09080a, #480d78);
-  background-repeat: round; */
 }
 
 header {
@@ -38,9 +36,6 @@ header {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-
-  font-family: var(--ff-all);
-  font-size: 1.7rem;
 
   height: 7rem;
   width: 100%;
@@ -81,7 +76,7 @@ header {
   align-items: center;
 
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
 
   color: var(--color-terciary);
 
@@ -112,12 +107,12 @@ ul li a {
 }
 
 #contato {
-  color: #e7eff6;
-  background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
-  box-shadow: 0 0.5rem 1.125rem -0.7rem #b933d4;
-  padding: 1.5rem 2.5rem;
+  margin-top: 0;
+}
 
-  border-radius: 4rem;
+#contato:hover {
+  background: linear-gradient(150deg, #140164, #510179, #832402);
+  transform: translateY(0);
 }
 
 .main-section {
@@ -130,7 +125,7 @@ ul li a {
 
 .container {
   width: clamp(33rem, 80%, 130rem);
-  height: 100rem;
+  height: 110rem;
 
   margin: auto;
 
@@ -148,25 +143,6 @@ ul li a {
 
 .container p {
   font-size: var(--fs-header-sm);
-}
-
-.container h1 a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  text-decoration: none;
-  font-size: 2rem;
-
-  color: var(--color-terciary);
-  background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
-  box-shadow: 0 0.5rem 1.125rem -0.5rem #7f03bb;
-  border-radius: 4rem;
-
-  width: 18rem;
-
-  padding: 1.5rem 0;
-  margin-top: 7%;
 }
 
 .section-container {
@@ -188,7 +164,6 @@ ul li a {
 
   color: #e7eff6;
   background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
-  box-shadow: 0 0.5rem 1.125rem -0.5rem #7f03bb;
 
   position: absolute;
   top: -15rem;
@@ -225,7 +200,7 @@ iframe {
 }
 
 #master-two {
-  padding-top: 20rem;
+  padding-top: 25rem;
 }
 
 #master-three {
@@ -359,8 +334,9 @@ iframe {
   align-items: center;
   flex-direction: column;
 
-  background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
-  box-shadow: 0 0.5rem 1.125rem -0.5rem #7f03bb;
+  border: 0.4rem solid transparent;
+  background: linear-gradient(#222024, #222024) padding-box,
+    linear-gradient(150deg, #16026b, #7f03bb, #ed4101 ) border-box;
   border-radius: 3rem;
 
   transition: transform 0.3s ease-out;
@@ -453,7 +429,6 @@ h3 {
   flex-direction: column;
 
   background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
-  box-shadow: 0 0.5rem 1.125rem -0.5rem #7f03bb;
   border-radius: 3rem;
 
   transition: transform 0.3s ease-out;
@@ -487,6 +462,16 @@ h3 {
     margin: 3rem 0;
   }
 
+  .card-container-three {
+    flex-direction: column;
+
+    margin-top: 40rem;
+  }
+
+  .card-three {
+    margin: 3rem 0;
+  }
+
   .section-container-four h1 {
     padding-top: 27rem;
   }
@@ -501,7 +486,7 @@ h3 {
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 855px) {
   #logo {
     top: 0;
     height: 4rem;
@@ -534,6 +519,18 @@ h3 {
 
   #master-three {
     padding-top: 15rem;
+  }
+
+  .section-container-three {
+    margin-top: 7rem;
+  }
+
+  .section-container-four {
+    margin-top: 15rem;
+  }
+
+  .section-container-five {
+    margin-top: 10rem;
   }
 
   .card-container {
@@ -581,6 +578,10 @@ h3 {
 
   .div-img img {
     width: 80%;
+  }
+
+  .section-container-five h1{
+    padding: 0 4rem;
   }
 }
 
