@@ -122,12 +122,12 @@ ul li a {
 
 .main-section {
   background-image: url(./imgs/main-img.png);
-  /* background-attachment: fixed; */
-  /* background-size: cover; */
-  object-fit: cover;
+  background-attachment: fixed; 
+  /* background-size: cover;
+  /* object-fit: cover; */
 
-  /* background-repeat: no-repeat; */
-  /* background-position: center center; */
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 120vh;
 }
 
@@ -495,12 +495,13 @@ h3 {
 }
 
 @media (max-width: 855px) {
-  /* .main-section {
+  .main-section {
     background-image: url(./imgs/main-img\ -\ Copia.png);
-    background-attachment: fixed;
-
+    object-fit: cover;
+    background-attachment:scroll;
+    
     height: 100vh;
-  } */
+  }
 
   #logo {
     top: 0;
