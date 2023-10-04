@@ -494,12 +494,12 @@ h3 {
 }
 
 @media (max-width: 855px) {
-.main-section {
-  background-image: url(./imgs/main-img\ -\ Copia.png);
-  background-attachment: fixed;
+  .main-section {
+    background-image: url(./imgs/main-img\ -\ Copia.png);
+    background-attachment: fixed;
 
-  height: 100vh;
-}
+    height: 100vh;
+  }
 
   #logo {
     top: 0;
