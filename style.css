@@ -493,12 +493,14 @@ h3 {
 }
 
 @media (max-width: 855px) {
-  /* .main-section {
-    background-image: url(./imgs/main-img.png);
+  .main-section {
+    background-image: url(./imgs/main-img\ -\ Copia.png);
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-  } */
+    height: 100vh;
+  }
 
   #logo {
     top: 0;
