@@ -122,8 +122,9 @@ ul li a {
 
 .main-section {
   background-image: url(./imgs/main-img.png);
-  background-attachment: fixed;
-  background-size: cover;
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+  object-fit: cover;
 
   /* background-repeat: no-repeat; */
   /* background-position: center center; */
