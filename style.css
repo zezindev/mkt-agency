@@ -44,8 +44,13 @@ header {
 
   position: fixed;
 
-  z-index: 999;
+  background: linear-gradient(135deg, transparent, transparent);
+  transition: background 0.5s;
 
+  z-index: 1000;
+}
+
+#main-header.scrolled {
   background: linear-gradient(
     135deg,
     rgba(22, 2, 107, 0.6),
