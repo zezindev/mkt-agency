@@ -123,9 +123,11 @@ ul li a {
 .main-section {
   background-image: url(./imgs/main-img.png);
   background-attachment: fixed;
+  background-size: cover;
 
-  object-fit: cover;
-  height: 100rem;
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
+  height: 100vh;
 }
 
 .container {
@@ -492,14 +494,13 @@ h3 {
 }
 
 @media (max-width: 855px) {
-  /* .main-section {
-    background-image: url(./imgs/main-img\ -\ Copia.png);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
-  } */
+.main-section {
+  background-image: url(./imgs/main-img\ -\ Copia.png);
+  background-attachment: fixed;
+
+  height: 100vh;
+  width: 600px;
+}
 
   #logo {
     top: 0;
