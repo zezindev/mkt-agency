@@ -158,6 +158,7 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   height: 10rem;
   width: 90%;
@@ -472,8 +473,10 @@ h3 {
   }
 
   .div-gradient h1 {
+    margin:auto
     font-size: 2rem;
   }
+  
   .video-container {
     position: absolute;
   }
