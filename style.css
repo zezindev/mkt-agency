@@ -6,7 +6,7 @@
 
 :root {
   --ff-all: "Outfit", sans-serif;
-  --bg-primary: #222024;
+  --bg-primary: #200038;
   --color-primary: #7f03bb;
   --color-terciary: #e7eff6;
 
@@ -45,18 +45,13 @@ header {
   position: fixed;
 
   background: linear-gradient(135deg, transparent, transparent);
-  transition: background 0.5s;
+  transition: background-color 0.3s;
 
   z-index: 1000;
 }
 
 #main-header.scrolled {
-  background: linear-gradient(
-    135deg,
-    rgba(22, 2, 107, 0.6),
-    rgba(127, 3, 187, 0.5),
-    rgba(237, 65, 1, 0.2)
-  );
+  background-color: rgba(171, 170, 170, 0.14);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
   box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.37);
@@ -122,9 +117,7 @@ ul li a {
 
 .main-section {
   background-image: url(./imgs/main-img.png);
-  background-attachment: fixed; 
-  /* background-size: cover;
-  /* object-fit: cover; */
+  background-attachment: fixed;
 
   background-repeat: no-repeat;
   background-position: center center;
@@ -161,36 +154,25 @@ ul li a {
   justify-content: center;
 }
 
-.card-container {
-  height: 35rem;
-  width: 97%;
+.div-gradient {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border-radius: 0 2rem 2rem 0;
+  height: 10rem;
+  width: 90%;
+
+  border-radius: 2rem 0 2rem 0;
 
   color: #e7eff6;
   background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
 
   position: absolute;
-  top: -15rem;
-  left: 0;
-
-  padding: 0 5rem;
+  top: -5rem;
 }
 
-.card {
-  width: 30rem;
-  height: 100%;
-  margin-left: 8%;
-
-  text-align: center;
-  font-family: var(--ff-all);
-  font-size: var(--fs-body);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.div-gradient h1 {
+  font-size: var(--fs-header-sm);
 }
 
 .video-container {
@@ -342,9 +324,7 @@ iframe {
   align-items: center;
   flex-direction: column;
 
-  border: 0.4rem solid transparent;
-  background: linear-gradient(#222024, #222024) padding-box,
-    linear-gradient(150deg, #16026b, #7f03bb, #ed4101) border-box;
+  background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
   border-radius: 3rem;
 
   transition: transform 0.3s ease-out;
@@ -391,70 +371,12 @@ h3 {
   color: var(--color-terciary);
 }
 
-.section-container-five {
-  position: relative;
-
+.section-card-slide {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  margin-top: 20rem;
-}
-
-.section-container-five h1 {
-  font-size: var(--fs-header-sm);
-  color: var(--color-terciary);
-}
-
-.card-container-three {
-  width: clamp(33rem, 80%, 130rem);
-  height: 35rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 0 2rem 2rem 0;
-
-  color: #e7eff6;
-
-  margin-top: 7rem;
-}
-
-.card-three {
-  width: 100%;
-  height: 90%;
-
-  padding: 2rem 5rem;
-  margin: 0 2%;
-
-  text-align: center;
-  font-size: var(--fs-body);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
-  border-radius: 3rem;
-
-  transition: transform 0.3s ease-out;
-  transform: translateY(0);
-}
-
-.card-three:hover {
-  transform: translate(-5px, -10px);
-  cursor: pointer;
-}
-
-.card-three img {
-  height: 25%;
-  margin-bottom: 2rem;
-}
-
-.card-three h1 {
-  margin-bottom: 1rem;
+  margin: 15rem auto;
 }
 
 /* Mobile */
@@ -498,8 +420,8 @@ h3 {
   .main-section {
     background-image: url(./imgs/main-img\ -\ Copia.png);
     object-fit: cover;
-    background-attachment:scroll;
-    
+    background-attachment: scroll;
+
     height: 100vh;
   }
 
@@ -549,27 +471,9 @@ h3 {
     margin-top: 10rem;
   }
 
-  .card-container {
-    height: 30rem;
-    width: 97%;
-    display: flex;
-
-    padding: 0 2rem;
+  .div-gradient h1 {
+    font-size: 2rem;
   }
-
-  .card {
-    height: 100%;
-    margin: 2rem;
-
-    text-align: start;
-    font-family: var(--ff-all);
-    font-size: 1.2rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .video-container {
     position: absolute;
   }
