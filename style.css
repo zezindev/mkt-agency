@@ -356,7 +356,7 @@ iframe {
   align-items: center;
   justify-content: center;
 
-  margin-top: 20rem;
+  margin: 20rem auto;
 }
 
 .section-container-four h1 {
@@ -374,6 +374,11 @@ h3 {
   color: var(--color-terciary);
 }
 
+.section-carousel {
+  padding: 5rem 0 10rem;
+  background-color: var(--bg-primary);
+}
+
 .carousel-container {
   width: clamp(33rem, 80%, 100rem);
   height: 50rem;
@@ -383,7 +388,7 @@ h3 {
   justify-content: center;
   text-align: center;
 
-  margin: 17rem auto;
+  margin: 0 auto;
   padding: 0 2rem;
 }
 
@@ -451,18 +456,20 @@ h3 {
   display: inline-block;
 
   padding: 2rem 3rem;
-  margin: 0 auto;
+  margin: 4rem auto 0;
 
   background-color: #200038;
   color: #fff;
 
   text-decoration: none;
+  font-size: var(--fs-body);
   border-radius: 0.5rem;
   transition: background-color 0.3s ease;
 }
 
 .btn-saiba-mais:hover {
-  background-color: #0056b3;
+  background-color: #7432a7;
+  color: var(--color-terciary);
 }
 
 .pagination {
@@ -472,7 +479,7 @@ h3 {
 }
 
 .pagination-button {
-  background-color: #ccc;
+  background-color: #fff;
   width: 10px;
   height: 10px;
   margin: 0 5px;
@@ -487,29 +494,48 @@ h3 {
 }
 
 .navigation {
+  position: absolute;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 2rem;
+  top: -47%;
+  position: relative;
 }
 
 .prev,
 .next {
-  background-color: #200038;
+  position: absolute;
+  background-color: inherit;
   color: #ffffff;
-  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
   transition: background-color 0.3s ease;
-  font-size: 2rem;
+  font-size: 8rem;
 }
 
-/* .prev:hover,
-.next:hover {
-  background-color: #0056b3;
-} */
-/* Mobile */
+.prev {
+  left: -3rem;
+}
+
+.next {
+  right: -3rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #030101;
+  color: #fff;
+  padding: 3rem 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.4rem;
+}
 
 @media (max-width: 1050px) {
   .card-container-two {
@@ -591,10 +617,7 @@ h3 {
 
   .section-container-three {
     margin-top: 7rem;
-  }
-
-  .section-container-four {
-    margin-top: 15rem;
+    padding: 0 5rem;
   }
 
   .section-container-five {
@@ -602,10 +625,10 @@ h3 {
   }
 
   .div-gradient h1 {
-    margin:auto
+    margin: auto;
     font-size: 1.6rem;
   }
-  
+
   .video-container {
     position: absolute;
   }
@@ -675,6 +698,7 @@ h3 {
   }
 
   .div-img {
+    margin-top: 6rem;
     width: 70%;
   }
 
@@ -682,8 +706,12 @@ h3 {
     width: 100%;
   }
 
+  .section-container-four {
+    margin: 15rem auto 10rem;
+  }
+
   .section-container-four h1 {
-    padding-top: 27rem;
+    margin-bottom: 7rem;
   }
 
   #master-three {
@@ -701,7 +729,5 @@ h3 {
 
   .carousel-container {
     height: 60rem;
-
-    margin: 10rem auto;
   }
 }
