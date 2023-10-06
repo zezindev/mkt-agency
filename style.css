@@ -6,7 +6,7 @@
 
 :root {
   --ff-all: "Outfit", sans-serif;
-  --bg-primary: #200038;
+  --bg-primary: #100010;
   --color-primary: #7f03bb;
   --color-terciary: #e7eff6;
 
@@ -375,8 +375,8 @@ h3 {
 }
 
 .section-carousel {
-  padding: 5rem 0 10rem;
-  background-color: var(--bg-primary);
+  padding: 8rem 0 10rem;
+  background-color: #191236;
 }
 
 .carousel-container {
@@ -416,7 +416,7 @@ h3 {
 .card {
   background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
   color: var(--color-terciary);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1.125rem -0.7rem #b933d4;
   border-radius: 1rem;
 
   padding: 15rem 2rem;
@@ -458,17 +458,17 @@ h3 {
   padding: 2rem 3rem;
   margin: 4rem auto 0;
 
-  background-color: #200038;
-  color: #fff;
+  background-color: #ff4400;
+  color: var(--color-terciary);
 
   text-decoration: none;
   font-size: var(--fs-body);
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   transition: background-color 0.3s ease;
 }
 
 .btn-saiba-mais:hover {
-  background-color: #7432a7;
+  background-color: #b03306;
   color: var(--color-terciary);
 }
 
@@ -479,7 +479,7 @@ h3 {
 }
 
 .pagination-button {
-  background-color: #fff;
+  background-color: var(--color-terciary);
   width: 10px;
   height: 10px;
   margin: 0 5px;
@@ -490,7 +490,7 @@ h3 {
 }
 
 .pagination-button.active {
-  background-color: #7f03bb;
+  background-color: var(--color-primary);
 }
 
 .navigation {
@@ -508,13 +508,12 @@ h3 {
 .next {
   position: absolute;
   background-color: inherit;
-  color: #ffffff;
+  color: var(--color-terciary);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 
-  transition: background-color 0.3s ease;
-  font-size: 8rem;
+  font-size: 9rem;
 }
 
 .prev {
@@ -527,7 +526,11 @@ h3 {
 
 footer {
   text-align: center;
-  background-color: #030101;
+
+
+  border-top: 0.4rem solid transparent;
+  background: linear-gradient(#100010, #100010) padding-box,
+    linear-gradient(150deg, #16026b, #7f03bb, #ed4101) border-box;
   color: #fff;
   padding: 3rem 0;
 }
