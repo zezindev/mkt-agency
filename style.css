@@ -6,7 +6,8 @@
 
 :root {
   --ff-all: "Outfit", sans-serif;
-  --bg-primary: #100010;
+  /* --bg-primary: linear-gradient(to right, red 10%, yellow 30%, green 70%); */
+  /* --bg-primary: #100010; */
   --color-primary: #7f03bb;
   --color-terciary: #e7eff6;
 
@@ -18,7 +19,7 @@
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: var(--bg-primary);
+  background-color:#100515;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -28,7 +29,8 @@
 
 body {
   font-family: var(--ff-all);
-  background-color: var(--bg-primary);
+  /* background-color: var(--bg-primary); */
+  background-image: radial-gradient(circle,#45175c,#1e0a26, #2b06cf);
 }
 
 header {
@@ -526,7 +528,6 @@ h3 {
 
 footer {
   text-align: center;
-
 
   border-top: 0.4rem solid transparent;
   background: linear-gradient(#100010, #100010) padding-box,
