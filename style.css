@@ -6,10 +6,8 @@
 
 :root {
   --ff-all: "Outfit", sans-serif;
-  /* --bg-primary: linear-gradient(to right, red 10%, yellow 30%, green 70%); */
-  /* --bg-primary: #100010; */
   --color-primary: #7f03bb;
-  --color-terciary: #e7eff6;
+  --color-secondary: #e7eff6;
 
   font-size: 62.5%;
   --fs-body: 1.6rem;
@@ -19,7 +17,7 @@
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color:#100515;
+  background-color: #100515;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -29,8 +27,7 @@
 
 body {
   font-family: var(--ff-all);
-  /* background-color: var(--bg-primary); */
-  background-image: radial-gradient(circle,#45175c,#1e0a26, #2b06cf);
+  background-image: radial-gradient(circle, #45175c, #1e0a26, #2b06cf);
 }
 
 header {
@@ -80,7 +77,7 @@ header {
   text-decoration: none;
   font-size: 1.8rem;
 
-  color: var(--color-terciary);
+  color: var(--color-secondary);
 
   background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
   box-shadow: 0 0.5rem 1.125rem -0.7rem #b933d4;
@@ -105,7 +102,7 @@ ul {
 
 ul li a {
   text-decoration: none;
-  color: var(--color-terciary);
+  color: var(--color-secondary);
 }
 
 #contato {
@@ -141,7 +138,7 @@ ul li a {
   font-family: var(--ff-all);
   font-size: var(--fs-header);
 
-  color: var(--color-terciary);
+  color: var(--color-secondary);
 }
 
 .container p {
@@ -167,7 +164,7 @@ ul li a {
 
   border-radius: 2rem 0 2rem 0;
 
-  color: #e7eff6;
+  color: var(--color-secondary);
   background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
 
   position: absolute;
@@ -259,7 +256,7 @@ iframe {
   height: 35rem;
   width: 70%;
 
-  color: var(--color-terciary);
+  color: var(--color-secondary);
 }
 
 .div-content h1 {
@@ -297,7 +294,7 @@ iframe {
 
 .section-container-three h1 {
   font-size: var(--fs-header-sm);
-  color: var(--color-terciary);
+  color: var(--color-secondary);
 }
 
 .card-container-two {
@@ -310,7 +307,7 @@ iframe {
 
   border-radius: 0 2rem 2rem 0;
 
-  color: #e7eff6;
+  color: var(--color-secondary);
 
   margin-top: 7rem;
 }
@@ -363,7 +360,7 @@ iframe {
 
 .section-container-four h1 {
   font-size: var(--fs-header-sm);
-  color: var(--color-terciary);
+  color: var(--color-secondary);
 }
 
 .section-container-four p {
@@ -373,7 +370,7 @@ iframe {
 h3 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: var(--color-terciary);
+  color: var(--color-secondary);
 }
 
 .section-carousel {
@@ -396,7 +393,7 @@ h3 {
 
 .carousel-container h1 {
   font-size: var(--fs-header-sm);
-  color: var(--color-terciary);
+  color: var(--color-secondary);
 
   margin-bottom: 5rem;
 }
@@ -417,7 +414,7 @@ h3 {
 
 .card {
   background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
-  color: var(--color-terciary);
+  color: var(--color-secondary);
   box-shadow: 0 0.5rem 1.125rem -0.7rem #b933d4;
   border-radius: 1rem;
 
@@ -445,13 +442,13 @@ h3 {
 
 .price {
   font-size: var(--fs-header-sm);
-  color: var(--color-terciary);
+  color: var(--color-secondary);
   margin-bottom: 1rem;
 }
 
 .description {
   font-size: 1.6rem;
-  color: var(--color-terciary);
+  color: var(--color-secondary);
 }
 
 .btn-saiba-mais {
@@ -461,7 +458,7 @@ h3 {
   margin: 4rem auto 0;
 
   background-color: #ff4400;
-  color: var(--color-terciary);
+  color: var(--color-secondary);
 
   text-decoration: none;
   font-size: var(--fs-body);
@@ -471,7 +468,7 @@ h3 {
 
 .btn-saiba-mais:hover {
   background-color: #b03306;
-  color: var(--color-terciary);
+  color: var(--color-secondary);
 }
 
 .pagination {
@@ -481,7 +478,7 @@ h3 {
 }
 
 .pagination-button {
-  background-color: var(--color-terciary);
+  background-color: var(--color-secondary);
   width: 10px;
   height: 10px;
   margin: 0 5px;
@@ -510,7 +507,7 @@ h3 {
 .next {
   position: absolute;
   background-color: inherit;
-  color: var(--color-terciary);
+  color: var(--color-secondary);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -532,7 +529,7 @@ footer {
   border-top: 0.4rem solid transparent;
   background: linear-gradient(#100010, #100010) padding-box,
     linear-gradient(150deg, #16026b, #7f03bb, #ed4101) border-box;
-  color: #fff;
+  color: var(--color-secondary);
   padding: 3rem 0;
 }
 
