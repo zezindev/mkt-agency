@@ -227,6 +227,11 @@ iframe {
   padding-left: 2rem;
 }
 
+#div-content-one p {
+  font-size: 2.7rem;
+  margin-bottom: 1.5rem;
+}
+
 #div-content-two {
   align-items: flex-start;
   padding-left: 5rem;
@@ -367,12 +372,6 @@ iframe {
   font-size: var(--fs-body);
 }
 
-h3 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  color: var(--color-secondary);
-}
-
 .section-carousel {
   padding: 8rem 0 10rem;
   background-color: #191236;
@@ -457,7 +456,7 @@ h3 {
   padding: 2rem 3rem;
   margin: 4rem auto 0;
 
-  background-color: #ff4400;
+  border: 0.25rem solid var(--color-secondary);
   color: var(--color-secondary);
 
   text-decoration: none;
@@ -467,7 +466,7 @@ h3 {
 }
 
 .btn-saiba-mais:hover {
-  background-color: #b03306;
+  background-color: #510179;
   color: var(--color-secondary);
 }
 
